@@ -41,7 +41,7 @@
  background-image: url(images/0413.jpg);
  background-size: cover;
  -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
- clip-path: polygon(45% 0, 100% 0%, 100% 100%, 0% 100%); 
+ clip-path: polygon(43% 0, 100% 0%, 100% 100%, 0% 100%); 
 
  
 }
