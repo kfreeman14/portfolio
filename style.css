@@ -42,7 +42,7 @@
  width: 40%;
  right: 0;
  top: 0;
- background-image: url(images/0285.jpg);
+ background-image: url(images/0017.jpg);
  background-size: cover;
  -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
  clip-path: polygon(45% 0, 100% 0%, 100% 100%, 0% 100%); 
@@ -86,6 +86,13 @@ li{
 }
 #aboutHeader{
   margin-top: 8em;
+  
+ 
+}
+.test{
+   display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 600px) {
