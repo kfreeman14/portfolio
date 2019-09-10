@@ -92,7 +92,9 @@ li{
     justify-content: center;
     align-items: center;
 }
-
+#sticky-footer {
+  flex-shrink: none;
+}
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
