@@ -10,8 +10,7 @@
 
 
   background-image: url(images/0421.jpg);
- 
-
+  
   -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0%, 70% 100%,  0% 100%); 
 }
@@ -24,11 +23,11 @@
   display: flex;
     justify-content: center;
     align-items: center;
- 
+ -webkit-filter: grayscale(70%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(60%);
 
- 
   background-size: cover;
-  background-image: url(images/0317.jpg);
+  background-image: url(images/0321.jpg);
   -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(38% 0%, 100% 0%,75% 100%, 25% 100%); 
 }
@@ -39,16 +38,17 @@
  width: 40%;
  right: 0;
  top: 0;
- background-image: url(images/0017.jpg);
+ background-image: url(images/0413.jpg);
  background-size: cover;
  -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
  clip-path: polygon(45% 0, 100% 0%, 100% 100%, 0% 100%); 
 
-
+ 
 }
 li{
 	font-family: 'Nothing You Could Do', cursive;
   font-size: 18px;
+  font-weight: 800;
 }
 #center-box{
  color:#d3d3d3;
