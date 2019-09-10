@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*	font-family: 'Nothing You Could Do', cursive;
 	font-size: 20px;
 	padding-right: 5px;
@@ -123,4 +124,134 @@ li{
         text-align: center;
         
 
+=======
+
+#projects{
+	text-decoration: none;
+	color: white;
+	font-size: 40px;
+	padding: 10px;
+
+}
+#aboutme{
+	text-decoration: none;
+	
+	font-size: 40px;
+	padding: 10px;
+	color:white;
+	transform: rotate(-90deg) scale(1,1);
+}
+#mtn{
+	background-image: url('images/mtns3.png');
+	background-size: cover;
+}
+#mtn4{
+	background-image: url('images/mtn4.jpg');
+	background-size: cover;
+}
+#mtns{
+	background-image: url('images/mtns2.jpg');
+	background-size: cover;
+
+}
+#mtns2{
+	background-image: url('images/mtns.jpg');
+	background-size: cover;
+	transform: rotate(-90deg);
+}
+#daredesign{
+	font-size: 80px;
+	text-decoration: none;
+	padding-left: 0.15em;
+	transform: rotate(-90deg);
+}
+body{background:#000;}
+#big_diamond {
+  width: 60%;
+  margin:15% auto;
+  overflow:hidden;
+  transform: rotate(45deg);
+}
+.diamond {
+  position: relative;
+  float: left;
+  width: 31.33%;
+  padding-bottom: 31.33%;
+  margin: 1%;
+  background: #fff;
+  transition:background-color .4s;
+}
+.diamond a {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+#name{
+	transform: rotate(-45deg);
+text-align: center;
+padding-top: 20%;
+font-size: 50px;
+text-decoration: none;
+color: white;
+font-family: 'Nothing You Could Do', cursive;
+}
+#red{background-color: #AA1C08; }
+.diamond:hover, #red:hover{background-color:darkorange;}
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("images/mtns3.png");
+  background-color: gray;
+  
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.masthead h1{
+	font-size: 72px;
+}
+.masthead p{
+	font-size: 30px;
+	color: white
+}
+#masthead h2,h1,p {
+  
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+>>>>>>> 84bb38c2b6999937882cd0a2b50d31693cdab33f
 }
