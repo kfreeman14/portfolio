@@ -1,257 +1,95 @@
-<<<<<<< HEAD
-/*	font-family: 'Nothing You Could Do', cursive;
-	font-size: 20px;
-	padding-right: 5px;
-}
-#logo{
-	vertical-align: bottom;
-	height: 100vh
-}
-.one {
+
+#one{
   position: absolute;
   height: 100vh;
-  width: 43.33%;
+  width: 35%;
   left: 0;
   top: 0;
-  background-image: url(images/everest5.jpg);
-  background-size: cover;
+
+
+
+
+  background-image: url(images/0421.jpg);
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+
+
   -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0%, 50% 100%,  0% 100%); 
+  clip-path: polygon(0 0, 100% 0%, 70% 100%,  0% 100%); 
 }
-.two {
+#two{
   position: absolute;
   height: 100vh;
-  width: 53.33%;
-  right: 0;
+  width: 89%;
+  left:0;
   top: 0;
-  background-image: url(images/everest.jpg);
-  background-size: cover;
-  -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%); 
-}
-.three {
-  position: absolute;
-  height: 100vh;
-  width: 73.33%;
-  right:25;
-  top: 0;
-  background-image: url(images/everest1.jpg);
-  background-size: cover;
-  -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(50% 0%, 100% 0%,75% 100%, 25% 100%); 
-}
-.parent {
-  position: relative;
-  width: 100%;
-   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50,50,50,0.8)), to(rgba(80,80,80,0.2)), color-stop(.5,#333333));
-}
-*/
-.column {
-  
+  display: flex;
+    justify-content: center;
+    align-items: center;
  
-  height: 100vh;
+
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  background-size: cover;
+  background-image: url(images/0317.jpg);
+  -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(38% 0%, 100% 0%,75% 100%, 25% 100%); 
 }
 
-/* Clear floats after the columns */
+#three{
+ position: absolute;
+ height: 100vh;
+ width: 40%;
+ right: 0;
+ top: 0;
+ background-image: url(images/0285.jpg);
+ background-size: cover;
+ -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+ clip-path: polygon(45% 0, 100% 0%, 100% 100%, 0% 100%); 
+
+ -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+ filter: grayscale(100%);
+
+}
+li{
+	font-family: 'Nothing You Could Do', cursive;
+  font-size: 18px;
+}
+#center-box{
+ color:#d3d3d3;
+  opacity: .9;
+}
+.col {
+  float: left;
+ 
+}
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-#one{
-position: absolute;
-  height: 100vh;
-  width: 35%;
-  left: 0;
-  top: 0;
- 
-
-
-	
-background-image: url(images/0421.jpg);
--webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-   
-    
-    -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0%, 70% 100%,  0% 100%); 
-}
-#two{
-	 position: absolute;
-  height: 100vh;
-  width: 89%;
-  left:50;
-  top: 0;
-  
-	 
--webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-   background-size: cover;
-background-image: url(images/0093.jpg);
--webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(38% 0%, 100% 0%,75% 100%, 25% 100%); 
+#btn-change{
+    height: 50px;
+    width: 200px;
+    background: lightseagreen;
+    margin: 20px;
+    float: left;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition: all 0.5s ease-in-out;
+    border: 0px;
+    color: #fff;
 }
 
-.three{
- position: absolute;
-  height: 100vh;
-  width: 40.33%;
-  right: 0;
-  top: 0;
-  background-image: url(images/0424.jpg);
-  background-size: cover;
-  -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(45% 0, 100% 0%, 100% 100%, 0% 100%); 
+#btn-change:hover{
+    -webkit-transform: scale(1.1);
+    background: #31708f;
+}
+#aboutHeader{
+  margin-top: 8em;
+}
 
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-   
-}
-li{
-	font-family: 'Nothing You Could Do', cursive;
-}
-.centerdiv {
- position: absolute;
-        top:0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 300px;
-        height: 200px;
-        background-color: darkgray;
-        font-family: 'Nothing You Could Do', cursive;
-        text-align: center;
-        
-
-=======
-
-#projects{
-	text-decoration: none;
-	color: white;
-	font-size: 40px;
-	padding: 10px;
-
-}
-#aboutme{
-	text-decoration: none;
-	
-	font-size: 40px;
-	padding: 10px;
-	color:white;
-	transform: rotate(-90deg) scale(1,1);
-}
-#mtn{
-	background-image: url('images/mtns3.png');
-	background-size: cover;
-}
-#mtn4{
-	background-image: url('images/mtn4.jpg');
-	background-size: cover;
-}
-#mtns{
-	background-image: url('images/mtns2.jpg');
-	background-size: cover;
-
-}
-#mtns2{
-	background-image: url('images/mtns.jpg');
-	background-size: cover;
-	transform: rotate(-90deg);
-}
-#daredesign{
-	font-size: 80px;
-	text-decoration: none;
-	padding-left: 0.15em;
-	transform: rotate(-90deg);
-}
-body{background:#000;}
-#big_diamond {
-  width: 60%;
-  margin:15% auto;
-  overflow:hidden;
-  transform: rotate(45deg);
-}
-.diamond {
-  position: relative;
-  float: left;
-  width: 31.33%;
-  padding-bottom: 31.33%;
-  margin: 1%;
-  background: #fff;
-  transition:background-color .4s;
-}
-.diamond a {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-}
-#name{
-	transform: rotate(-45deg);
-text-align: center;
-padding-top: 20%;
-font-size: 50px;
-text-decoration: none;
-color: white;
-font-family: 'Nothing You Could Do', cursive;
-}
-#red{background-color: #AA1C08; }
-.diamond:hover, #red:hover{background-color:darkorange;}
-.masthead {
-  height: 100vh;
-  min-height: 500px;
-  background-image: url("images/mtns3.png");
-  background-color: gray;
-  
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.masthead h1{
-	font-size: 72px;
-}
-.masthead p{
-	font-size: 30px;
-	color: white
-}
-#masthead h2,h1,p {
-  
-    animation: fadein 3s;
-    -moz-animation: fadein 3s; /* Firefox */
-    -webkit-animation: fadein 3s; /* Safari and Chrome */
-    -o-animation: fadein 3s; /* Opera */
-}
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
->>>>>>> 84bb38c2b6999937882cd0a2b50d31693cdab33f
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
