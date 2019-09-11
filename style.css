@@ -1,88 +1,87 @@
 
 #one{
-  position: absolute;
+  
   height: 100vh;
-  width: 40%;
-  left: 0;
-  top: 0;
-
-
+  
   background-position: center;
-
   background-image: url(images/0413.jpg);
   
-  -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
-  clip-path: polygon(0 0, 83% 0%, 90% 100%,  0% 100%); 
+  
 }
 #two{
   border: red 1.4px;
-  position: absolute;
+  
   height: 100vh;
-  width: 50%;
-  left:26em;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
+ 
+  
   -webkit-filter: grayscale(70%); /* Safari 6.0 - 9.0 */
   filter: grayscale(60%);
-
-  background-position: center;
-
+  
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url(images/0421.jpg);
-  -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(15% 0%, 87% 0, 80% 100%, 20% 100%); 
+  
 }
 
 #three{
- position: absolute;
+
  height: 100vh;
- width: 40%;
- right: 0;
- top: 0;
- background-position: right;
+ 
  background-image: url(images/0424.jpg);
  background-size: cover;
- -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
- clip-path: polygon(30% 0%, 100% 0, 100% 100%, 20% 100%); 
+ 
 }
 #master1{
- 
+ margin: 0 auto;
    height: 100vh;
    display: flex;
  align-items: center;
  width: 33.33%;
+ border-width: 2px;
+ border-color: red;
+ border-style: solid;
  -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
   clip-path: polygon(0 0, 83% 0%, 90% 100%,  0% 100%); 
-
 }
 #master2{
    
     height: 100vh;
-    display: flex;
- align-items: center;
- width: 43.33%;
- -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(15% 0%, 87% 0, 80% 100%, 20% 100%); 
+   display: flex;
+   align-items: center;
+   width: 33.33%;
+    border-width: 2px;
+    border-color: red;
+   border-style: solid;
+   -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+   clip-path: polygon(15% 0%, 87% 0, 80% 100%, 20% 100%); 
 }
 #master3{
   
    height: 100vh;
    display: flex;
- align-items: center;
- width: 33.33%;
- -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
- clip-path: polygon(30% 0%, 100% 0, 100% 100%, 20% 100%); 
+   align-items: center;
+   width: 33.33%;
+   border-width: 2px;
+   border-color: red;
+   border-style: solid;
+   -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+   clip-path: polygon(30% 0%, 100% 0, 100% 100%, 20% 100%); 
 }
 #master1 img{
 height: 100vh;
+margin: 0 auto;
 }
 #master2 img{
 height: 100vh;
 }
 #master3 img{
 height: 100vh;
+width: 100%;
+
 }
+
 li{
 	font-family: 'Nothing You Could Do', cursive;
   font-size: 20px;
@@ -92,15 +91,8 @@ li{
  color:#d3d3d3;
  opacity: .9;
 }
-.col {
-  float: left;
 
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 #btn-change{
   height: 50px;
   width: 200px;
