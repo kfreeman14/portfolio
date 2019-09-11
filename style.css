@@ -2,8 +2,10 @@
 #one{
   
   height: 100vh;
-  
-  background-position: center;
+    
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url(images/0413.jpg);
   
   
@@ -30,7 +32,10 @@ background-position: center;
  height: 100vh;
  
  background-image: url(images/0424.jpg);
- background-size: cover;
+  
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
  
 }
 #master1{
