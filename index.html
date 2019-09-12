@@ -9,7 +9,33 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	
+	<script type="text/javascript">
+		document.getElementById('status').innerHTML = "Sending...";
+		formData = {
+			'name'     : $('input[name=name]').val(),
+			'email'    : $('input[name=email]').val(),
+			'subject'  : $('input[name=subject]').val(),
+			'message'  : $('textarea[name=message]').val()
+		};
+
+
+		$.ajax({
+			url : "mail.php",
+			type: "POST",
+			data : formData,
+			success: function(data, textStatus, jqXHR)
+			{
+
+				$('#status').text(data.message);
+			if (data.code) //If mail was sent successfully, reset the form.
+				$('#contact-form').closest('form').find("input[type=text], textarea").val("");
+			},
+			error: function (jqXHR, textStatus, errorThrown)
+			{
+				$('#status').text(jqXHR);
+			}
+			});
+</script>
 </head>
 <body >
 	<nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top text-light " id="nav" >
@@ -41,7 +67,7 @@
 
 		</div>
 	</nav>
-<div class="row m-0 " >
+	<div class="row m-0 " >
 		<div class="col" id="one">
 			<!--<img class="img-fluid" src="images/0413.jpg">-->
 		</div>
@@ -54,82 +80,149 @@
 	<section id="about">
 		<div class="container" id="aboutHeader">
 			<div class="row featurette ">
-					<div class="col-md-7 ">
-						<h2 class="featurette-heading text-muted" style="font-family: 'Nothing You Could Do', cursive;">Who am I?</h2>
-						<p class="lead">Hello, my name is Katie Freeman. I’m a web developer and recent grad from Quinnipiac Univeristy 2020. I design, produce and manage website applications for your business or organization as a freelance developer. With fluency in React.js, HTML, CSS, JavaScript, Node.js, php, and SQL I look forward to continue my career exploring these as well as new frameworks/languages. Feel free to navigate my website and get in touch. Best wishes!</p>
-					</div>
-					<div class="col-md-5">
-						<img  class="featurette-image img-fluid mx-auto" src="images/me.jpg" width="500px;">
-					</div>
+				<div class="col-md-7 ">
+					<h2 class="featurette-heading text-muted" style="font-family: 'Nothing You Could Do', cursive;">Who am I?</h2>
+					<p class="lead">Hello, my name is Katie Freeman. I’m a web developer and recent grad from Quinnipiac Univeristy 2020. I design, produce and manage website applications for your business or organization as a freelance developer. With fluency in React.js, HTML, CSS, JavaScript, Node.js, php, and SQL I look forward to continue my career exploring these as well as new frameworks/languages. Feel free to navigate my website and get in touch. Best wishes!</p>
+				</div>
+				<div class="col-md-5">
+					<img  class="featurette-image img-fluid mx-auto" src="images/me.jpg" width="500px;">
+				</div>
 			</div>
 			<br/>
 			<hr class="p-3">
 			<div class="row">
-					<div class="col-lg-4">
+				<div class="col-lg-4">
 
-							<h2 style="font-family: 'Nothing You Could Do', cursive;"><span class="text-muted">01.</span> Research</h2>
-							<p>Understand the client’s subject matter completely and build on the knowledge related to it, becoming intimately familiar with the subject matter. Determine methods to address the specific customer’s needs and requirements.</p>
-					</div>
-					<div class="col-lg-4">
-							<h2 style="font-family: 'Nothing You Could Do', cursive;"><span class="text-muted">02.</span> Design</h2>
-							<p>Misleadingly thought of as the superficial appearance of a product, design actually encompasses a lot more. It is a cross functional process that includes market research, technical research, design of a concept, and prototype mockup.</p>
-					</div>
-					<div class="col-lg-4">
+					<h2 style="font-family: 'Nothing You Could Do', cursive;"><span class="text-muted">01.</span> Research</h2>
+					<p>Understand the client’s subject matter completely and build on the knowledge related to it, becoming intimately familiar with the subject matter. Determine methods to address the specific customer’s needs and requirements.</p>
+				</div>
+				<div class="col-lg-4">
+					<h2 style="font-family: 'Nothing You Could Do', cursive;"><span class="text-muted">02.</span> Design</h2>
+					<p>Misleadingly thought of as the superficial appearance of a product, design actually encompasses a lot more. It is a cross functional process that includes market research, technical research, design of a concept, and prototype mockup.</p>
+				</div>
+				<div class="col-lg-4">
 
-							<h2 style="font-family: 'Nothing You Could Do', cursive;"><span class="text-muted">03.</span> Develop</h2>
-							<p>Findings from the research and design phases are utilized for the production of specific products including materials, systems, and methods. Engineer utilizing the research and designs to produce commercial products for the customer.</p>
-					</div>
+					<h2 style="font-family: 'Nothing You Could Do', cursive;"><span class="text-muted">03.</span> Develop</h2>
+					<p>Findings from the research and design phases are utilized for the production of specific products including materials, systems, and methods. Engineer utilizing the research and designs to produce commercial products for the customer.</p>
+				</div>
 			</div>
 			<hr class="p-3">
 			<div class="pr-3 pb-3  test">
-					<div style="display: inline-block;">
-						<img src="images/react.png" width="75px;">
-						<img src="images/js.png" width="75px;">
-						<img src="images/php.png" width="75px;">
-						<img src="images/sql.png" width="65px;">
-						<img src="images/html.png" width="75px;">
-						<img src="images/css.png" width="75px;">
-						<img src="images/r.png" width="75px;">
-					</div>
+				<div style="display: inline-block;">
+					<img src="images/react.png" width="75px;">
+					<img src="images/js.png" width="75px;">
+					<img src="images/php.png" width="75px;">
+					<img src="images/sql.png" width="65px;">
+					<img src="images/html.png" width="75px;">
+					<img src="images/css.png" width="75px;">
+					<img src="images/r.png" width="75px;">
+				</div>
 			</div>
-	</section>
+		</section>
 
-	<section class="">
-		<div class="row m-0">
-			<div class="col d-flex justify-content-center" id="ui">
-				<div class="text-content ">
-			      <div class="bold"><span style=" font-size: 4em;">View my</span><br/><span class="big">Resume</span><br/><button class="btn-lg" id="btn-change1">Click Here</button></div>
-			      
-			       
-			    </div>
-			   
-			</div>
-			<div class="col d-flex justify-content-center
-			" id="front">
+		<section class="">
+			<div class="row m-0">
+				<div class="col d-flex justify-content-center" id="ui">
+					<div class="text-content ">
+						<div class="bold"><span style=" font-size: 4em;">View my</span><br/><span class="big">Resume</span><br/><button class="btn-lg" id="btn-change1"><a href="https://kfreeman14.github.io/portfolio/docs/FreemanKatherineResume%20.pdf" style="text-decoration: none; color: white">Click Here</a></button></div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="col d-flex justify-content-center
+				" id="front">
 				
 				<div class='text-content'>
-			      <div class="bold"><span style=" font-size: 4em;">Check out</span>
-			      	<br/><span class="big">My Projects</span><br/>
-			      	<button class="btn-lg" id="btn-change1">
-			      		View Now
-			    	</button>
-			      </div> 
-			    </div>
-			    
+					<div class="bold"><span style=" font-size: 4em;">Check out</span>
+						<br/><span class="big">My Projects</span><br/>
+						<button class="btn-lg" id="btn-change1">
+							View Now
+						</button>
+					</div> 
+				</div>
+				
 			</div>
 		</div>
 	</section>
-		
+	<!--Section: Contact v.2-->
+	<section class="container p-3" id="contact">
+
+		<!--Section heading-->
+		<h2 class="h1-responsive font-weight-bold text-center my-4">Contact Me</h2>
+		<!--Section description-->
+		<p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Want to collaborate?</p>
+
+		<div class="row">
+
+			<!--Grid column-->
+			<div class="col-md-12 mb-md-0 mb-5">
+				<form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+					<!--Grid row-->
+					<div class="row">
+
+						<!--Grid column-->
+						<div class="col-md-6">
+							<div class="md-form mb-0">
+								<input type="text" id="name" name="name" class="form-control">
+								<label for="name" class="">Your name</label>
+
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="md-form mb-0">
+								<input type="text" id="email" name="email" class="form-control">
+								<label for="email" class="">Your email</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="md-form mb-0">
+								<input type="text" id="subject" name="subject" class="form-control">
+								<label for="subject" class="">Subject</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+
+						<!--Grid column-->
+						<div class="col-md-12">
+
+							<div class="md-form">
+								<textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+								<label for="message">Your message</label>
+							</div>
+
+						</div>
+					</div>
+					<!--Grid row-->
+
+				</form>
+
+				<div class="text-center text-md-left">
+					<a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+				</div>
+				<div class="status"></div>
+			</div>
+			<!--Grid column-->
+
+			
+		</div>
+
+	</section>
+	<!--Section: Contact v.2-->	
 </body>
 <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-    <div class="container text-center p-3" >
-      <small style="float: left;">Copyright &copy; Katherine Freeman</small>
-      <a href="https://www.linkedin.com/in/katiefreeman14" class="pr-3"><img  src="images/linkedin.png" width="30" style="float: right;"></a>
+	<div class="container text-center p-3" >
+		<small style="float: left;">Copyright &copy; Katherine Freeman</small>
+		<a href="https://www.linkedin.com/in/katiefreeman14" class="pr-3"><img  src="images/linkedin.png" width="30" style="float: right;"></a>
 
-      <a href="https://github.com/kfreeman14" class="pr-3"><img  src="images/github.png" width="30" style="float: right;"></a>
-  </div>
-    
+		<a href="https://github.com/kfreeman14" class="pr-3"><img  src="images/github.png" width="30" style="float: right;"></a>
+	</div>
+	
 
-  </footer>
+</footer>
 
 </html>
