@@ -5,16 +5,14 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="style.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
-<body>
-
-
 	
-
-	<nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top text-light " >
+</head>
+<body >
+	<nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top text-light " id="nav" >
 
 		<a class="navbar-brand" href="#" style="font-family: 'Nothing You Could Do', cursive;font-weight: 800; font-size: 20px;">Katherine Freeman</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +26,7 @@
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="about.html">About |</a>
+					<a class="nav-link" href="#about">About |</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="resume.html">Resume |</a>
@@ -43,33 +41,95 @@
 
 		</div>
 	</nav>
-
-	<!--<div  >
-		
-		<div class="col" id="one">
-
-
-		</div>
-
-		<div class="col" id="two">
-			<div class="mx-auto w-40  bg-light d-flex justify-content-center rounded" id="center-box">
-				<button class="btn rounded" id="btn-change" >Full Stack Web Developer</button>
-			</div>
-		</div>
-		<div class="col" id="three"></div>
-		<!--<div class="centerdiv" ><h1 >Katherine<br/> Freeman</h1></div>-->
-	<!--</div>-->
-	<div class="row m-0 " >
+<div class="row m-0 " >
 		<div class="col" id="one">
 			<!--<img class="img-fluid" src="images/0413.jpg">-->
 		</div>
-		<div class="col" id="two">
-			
+		<div class="col " id="two">
 		</div>
 		<div class="col" id="three">
-			
+			<!--<img class="img-fluid" src="images/0413.jpg">-->
 		</div>
 	</div>
+	<section id="about">
+		<div class="container" id="aboutHeader">
+			<div class="row featurette ">
+					<div class="col-md-7 ">
+						<h2 class="featurette-heading text-muted" style="font-family: 'Nothing You Could Do', cursive;">Who am I?</h2>
+						<p class="lead">Hello, my name is Katie Freeman. I’m a web developer. I design, produce and manage website applications for your business or organization as a freelance developer. With fluency in React.js, Node.js, php, and SQL, I look forward to joining a team with other fellow developers. Feel free to navigate my website and get in touch. Best wishes!</p>
+					</div>
+					<div class="col-md-5">
+						<img  class="featurette-image img-fluid mx-auto" src="images/me.jpg" width="500px;">
+					</div>
+			</div>
+			<br/>
+			<hr class="p-3">
+			<div class="row">
+					<div class="col-lg-4">
 
+							<h2 style="font-family: 'Nothing You Could Do', cursive;"><span class="text-muted">01.</span> Research</h2>
+							<p>Understand the client’s subject matter completely and build on the knowledge related to it, becoming intimately familiar with the subject matter. Determine methods to address the specific customer’s needs and requirements.</p>
+					</div>
+					<div class="col-lg-4">
+							<h2 style="font-family: 'Nothing You Could Do', cursive;"><span class="text-muted">02.</span> Design</h2>
+							<p>Misleadingly thought of as the superficial appearance of a product, design actually encompasses a lot more. It is a cross functional process that includes market research, technical research, design of a concept, and prototype mockup.</p>
+					</div>
+					<div class="col-lg-4">
+
+							<h2 style="font-family: 'Nothing You Could Do', cursive;"><span class="text-muted">03.</span> Develop</h2>
+							<p>Findings from the research and design phases are utilized for the production of specific products including materials, systems, and methods. Engineer utilizing the research and designs to produce commercial products for the customer.</p>
+					</div>
+			</div>
+			<hr class="p-3">
+			<div class="pr-3 pb-3  test">
+					<div style="display: inline-block;">
+						<img src="images/react.png" width="75px;">
+						<img src="images/js.png" width="75px;">
+						<img src="images/php.png" width="75px;">
+						<img src="images/sql.png" width="65px;">
+						<img src="images/html.png" width="75px;">
+						<img src="images/css.png" width="75px;">
+						<img src="images/r.png" width="75px;">
+					</div>
+			</div>
+	</section>
+
+	<section class="">
+		<div class="row m-0">
+			<div class="col d-flex justify-content-center" id="ui">
+				<div class="text-content ">
+			      <div class="bold"><span style=" font-size: 4em;">You want</span><br/><span class="big">ui/ux?</span><br/><button class="btn-lg" id="btn-change1">SHOW ME THE DESIGN</button></div>
+			      
+			       
+			    </div>
+			   
+			</div>
+			<div class="col d-flex justify-content-center
+			" id="front">
+				
+				<div class='text-content'>
+			      <div class="bold"><span style=" font-size: 4em;">You want</span>
+			      	<br/><span class="big">front-end?</span><br/>
+			      	<button class="btn-lg" id="btn-change1">
+			      		SHOW ME THE CODE
+			    	</button>
+			      </div> 
+			    </div>
+			    
+			</div>
+		</div>
+	</section>
+		
 </body>
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center p-3" >
+      <small style="float: left;">Copyright &copy; Katherine Freeman</small>
+      <a href="https://www.linkedin.com/in/katiefreeman14" class="pr-3"><img  src="images/linkedin.png" width="30" style="float: right;"></a>
+
+      <a href="https://github.com/kfreeman14" class="pr-3"><img  src="images/github.png" width="30" style="float: right;"></a>
+  </div>
+    
+
+  </footer>
+
 </html>
