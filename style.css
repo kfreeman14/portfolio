@@ -12,6 +12,12 @@
  text-align: center;
 
 }
+#zoom{
+   -webkit-transition: all 0.5s ease-in-out;
+}
+#zoom:hover {
+   -webkit-transform: scale(1.1);
+   }
 #one{
   
   height: 100vh;
@@ -100,16 +106,11 @@ width: 100%;
 
 }
 
-li{
+#nav{
 	font-family: 'Nothing You Could Do', cursive;
   font-size: 20px;
   font-weight: 800;
 }
-#center-box{
- color:#d3d3d3;
- opacity: .9;
-}
-
 
 #btn-change{
   height: 50px;
@@ -149,9 +150,7 @@ li{
  justify-content: center;
  align-items: center;
 }
-#sticky-footer {
-  flex-shrink: none;
-}
+
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
