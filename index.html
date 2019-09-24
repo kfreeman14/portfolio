@@ -9,10 +9,14 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	
+	<script type="text/javascript">
+		$(window).scroll(function(){
+	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+});
+	</script>
 </head>
 <body >
-	<nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top  text-light " id="nav" >
+	<nav class="navbar navbar-default navbar-expand-lg navbar-light  fixed-top bg-transparent  text-light scrolled " id="nav" >
 
 		<a class="navbar-brand" href="#" style="font-family: 'Nothing You Could Do', cursive;font-weight: 800; font-size: 20px;">Katherine Freeman</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,16 +30,16 @@
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="index.html#about">About |</a>
+					<a class="nav-link" href="about.html">About |</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="https://kfreeman14.github.io/portfolio/docs/FreemanKatherineResume%20.pdf">Resume |</a>
+					<a class="nav-link" href="resume.html">Resume |</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="work.html">Work |</a>
+					<a class="nav-link" href="work.html">Projects |</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="index.html#contact">Contact</a>
+					<a class="nav-link" href="contact.html">Contact</a>
 				</li>
 			</ul>
 
@@ -50,8 +54,8 @@
 		<div class="col" id="three">
 			<!--<img class="img-fluid" src="images/0413.jpg">-->
 		</div>
-	</div>
-	<section id="about">
+</div>
+<!--	<section id="about">
 		<div class="container" id="aboutHeader">
 			<div class="row featurette ">
 					<div class="col-md-7 ">
@@ -120,12 +124,12 @@
 			</div>
 		</div>
 	</section>
-	<!--Section: Contact v.2-->
+	
 <section class="container p-3 pb-5" id="contact">
 
-    <!--Section heading-->
+  
     <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Me</h2>
-    <!--Section description-->
+   
     <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Want to collaborate?</p>
 
     <div class="row d-flex justify-content-center">
@@ -144,10 +148,9 @@
 
     </div>
 
-</section>
-<!--Section: Contact v.2-->	
+<!--</section>-->
 </body>
-<footer class=" pt-3 border-top bg-dark">
+<!--<footer class=" pt-3 border-top bg-dark">
     <div class="row m-0">
      <div class="col-3 col-md">
        
@@ -168,7 +171,7 @@
       </div>
       
     </div>
-  </footer>
+  </footer>-->
 
 
 </html>
