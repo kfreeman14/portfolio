@@ -50,8 +50,9 @@
 		<small ><p class="text-center"><a href="https://kfreeman14.github.io/portfolio/docs/FreemanKatherineResume.pdf" style="text-decoration: none;" >PDF version</a></p></small>
 		<hr>
 		<p class="text-center"><a href="mailto:katiefreeman2016@gmail.com" style="text-decoration:none;">katiefreeman2016@gmail.com</a> &#x2022; (978) 478-8173 &#x2022; <a href="https://www.linkedin.com/in/katiefreeman14" style="text-decoration:none;">https://www.linkedin.com/in/katiefreeman14</a></p>
-		<h3 class="accordion ">Education</h3>
-		<div class=" col-12">
+		
+		<h3 class="accordion">Education</h3>
+		<div class="panel col-12">
 			<div class="row">
 				<div class="col-6">
 					<p ><strong>Quinnipiac University, School of Business</strong>, Hamden, CT<br>
@@ -70,7 +71,6 @@
 				</div>
 			</div>
 		</div>
-		<hr>
 		<h3 class="accordion">Experience</h3>
 		<div class="panel col-12">
 			<div class="row">
@@ -104,7 +104,7 @@
 				</div>
 			</div>
 		</div>
-		<hr>
+		
 		<h3 class="accordion">Projects</h3>
 		<div class="panel col-12">
 			<div class="row">
@@ -120,61 +120,60 @@
 			</div>
 		</div>
 
-	<hr>
-	<h3 class="accordion">Activities</h3>
-	<div class="panel col-12">
-		<div class="row">
-			<div class="col-12">
-				<p><strong>CIS Society</strong><br>
-					<em>Executive Vice President</em><br>
-					<ul>
-						<li>Planned/Ran weekly meetings and charity events, communicated with companies to plan society networking events</li>
-						<li>Discussed career employment trends and attended professional development workshops and networking events with visiting companies to develop broader understanding of the aspects of CIS and increase industry knowledge.
-						</li>
-					</ul>
-				</p>
-				<p><strong>Department of Computer Information Systems</strong><br>
-					<em>Student Ambassador</em><br>
-					<ul><li>Presented to freshman business students about the CIS major, opportunities, and personal professional experience </li>
-						<li>Served as an ambassador for CIS for anyone with questions, tabled at open houses, accepted student’s day etc.
-						</li>
-					</ul>
-					<strong>Habitat for Humanity</strong><br>
-					<em>Volunteer</em><br>
-					<ul><li>Built housing for a low income family in NC with a group of Quinnipiac students; building a roof, installing doors, constructing a shed, as well as connecting with the local community </li>
-					</ul>
+		<h3 class="accordion">Activities</h3>
+		<div class="panel col-12">
+			<div class="row">
+				<div class="col-12">
+					<p><strong>CIS Society</strong><br>
+						<em>Executive Vice President</em><br>
+						<ul>
+							<li>Planned/Ran weekly meetings and charity events, communicated with companies to plan society networking events</li>
+							<li>Discussed career employment trends and attended professional development workshops and networking events with visiting companies to develop broader understanding of the aspects of CIS and increase industry knowledge.
+							</li>
+						</ul>
+					</p>
+					<p><strong>Department of Computer Information Systems</strong><br>
+						<em>Student Ambassador</em><br>
+						<ul><li>Presented to freshman business students about the CIS major, opportunities, and personal professional experience </li>
+							<li>Served as an ambassador for CIS for anyone with questions, tabled at open houses, accepted student’s day etc.
+							</li>
+						</ul>
+						<strong>Habitat for Humanity</strong><br>
+						<em>Volunteer</em><br>
+						<ul><li>Built housing for a low income family in NC with a group of Quinnipiac students; building a roof, installing doors, constructing a shed, as well as connecting with the local community </li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<h3 class="accordion">Skills & Interests</h3>
+		<div class="panel col-12">
+			<div class="row">
+				<p><strong>Computer:</strong> Proficient in Microsoft Office Suite, MS Visual Studio, MS SharePoint, Power BI, JavaScript, React, OpenText; Coursework in Java, VB .Net, HTML, PHP, CSS and Python programming languages, Basic Linux administration, Tableau<br>
+					<strong>Interests:</strong> Web development/design, Running, Photography
 				</p>
 			</div>
 		</div>
+
 	</div>
-	<hr>
-	<h3 class="accordion">Skills & Interests</h3>
-	<div class="panel col-12">
-		<div class="row">
-			<p><strong>Computer:</strong> Proficient in Microsoft Office Suite, MS Visual Studio, MS SharePoint, Power BI, JavaScript, React, OpenText; Coursework in Java, VB .Net, HTML, PHP, CSS and Python programming languages, Basic Linux administration, Tableau<br>
-				<strong>Interests:</strong> Web development/design, Running, Photography
-			</p>
-		</div>
-	</div>
+	<script type="text/javascript">
 
-</div>
-<script type="text/javascript">
+		var acc = document.getElementsByClassName("accordion");
+		var i;
 
-	var acc = document.getElementsByClassName("accordion");
-	var i;
-
-	for (i = 0; i < acc.length; i++) {
-		acc[i].addEventListener("click", function() {
-			this.classList.toggle("activeresume");
-			var panel = this.nextElementSibling;
-			if (panel.style.display === "block") {
-				panel.style.display = "none";
-			} else {
-				panel.style.display = "block";
-			}
-		});
-	}
-</script>
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("activeresume");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
 </body>
 <!--<footer class="bg-light py-5" style="background-color: #e9ecef !important">
 	<div class="container">
