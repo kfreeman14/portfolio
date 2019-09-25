@@ -221,3 +221,12 @@ width: 100%;
 
 }
 
+.imgresume{
+    width: 150px;
+  height: auto;
+  position: relative;
+  -ms-transform: rotate(20deg); /* IE 9 */
+  -webkit-transform: rotate(20deg); /* Safari 3-8 */
+  transform: rotate(-10deg);
+ border: solid black;
+}
